@@ -10,10 +10,10 @@
     border-style: solid;
     border-width: thin;
     opacity: 0.75;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 35px;
-    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #savingsjumbo {
@@ -26,7 +26,7 @@
 
 #savingsheader {
     color: #009900;
-    font-family: sans-serif;
+    font-family: Rockwell;
 }
 
 .split-save-header {
@@ -48,8 +48,16 @@ img {
     background-color: #1a85ff;
     color: white;
     font-size: 16px;
+    font-family: Rockwell;
 }
 
 .split-save-desc {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: Rockwell;
+}
+
+#logo {
+    width: 316px;
+    height: 200px;
+    border: #00b300;
 }
