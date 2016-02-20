@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Salil999/HackIllinois2016#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "firebase": "^2.4.1",
+    "node-rest-client": "^1.8.0"
   }
 }
