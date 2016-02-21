@@ -1,0 +1,79 @@
+#mainheader {
+    color: white;
+    background-color: #009900;
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    opacity: 0.75;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.split-save-desc {
+    font-size: 20px;
+    font-family: Rockwell;
+}
+
+#logo {
+    width: 250px;
+    height: 150px;
+    border: #00b300;
+}
+#email {
+    font-family: Rockwell;
+}
+
+#password {
+    font-family: Rockwell;
+}
+
+#loginbutton {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+    color: white;
+    border: #009900;
+    background-color: #009900;   
+}
+
+#loginbutton:hover {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+    color: white;
+    border: #008900;
+    background-color: #008900;   
+}
+
+#loginfields {
+    padding-top: 95px;
+}
+
+#cont1 {
+    height: 276px;
+}
+
+#emailtext {
+    color: #009900;
+    font-size: 20px;
+}
+
+#pwdtext {
+    color: #009900;
+    font-size: 20px;
+}
+
+#mainheader {
+    background-image: url("http://images.all-free-download.com/images/wallpapers_large/forest_road_wallpaper_landscape_nature_wallpaper_1352.jpg");
+    background-size: 100% auto;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}

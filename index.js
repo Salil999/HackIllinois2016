@@ -10,7 +10,6 @@ const baseURL = 'http://api.reimaginebanking.com/';
 const cust_ID = '56c8ea7f061b2d440baf43dd';
 const acc_ID = '56c8f105061b2d440baf43ed';
 // Shashank's _id: 56c8ea7f061b2d440baf43dd
-var endpoint;
 
 var app = express();
 
@@ -43,6 +42,114 @@ app.get('/', function(req, res) {
                         street_name: data.address.street_name,
                         street_number: data.address.street_number,
                         zip: data.address.zip
+                    }
+                });
+                var fakePurchases = ref.child('users').child(account.uid).child('purchases');
+                fakePurchases.update({
+                    0: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-14",
+                            "amount": 854.32,
+                            "status": "pending",
+                            "description": "hella good dinner",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c967c47742719f0e4dd4c7"
+                        }
+                    },
+                    1: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-15",
+                            "amount": 793.21,
+                            "status": "pending",
+                            "description": "hella good lunch",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c968037742719f0e4dd4c8"
+                        }
+                    },
+                    2: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-16",
+                            "amount": 1235.23,
+                            "status": "pending",
+                            "description": "hella good break",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c968267742719f0e4dd4ca"
+                        }
+                    },
+                    3: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-17",
+                            "amount": 694.32,
+                            "status": "pending",
+                            "description": "hella good break",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c9684e7742719f0e4dd4cb"
+                        }
+                    },
+                    4: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-18",
+                            "amount": 1031.12,
+                            "status": "pending",
+                            "description": "hella good snack",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c9688b7742719f0e4dd4cc"
+                        }
+                    },
+                    5: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-19",
+                            "amount": 673.32,
+                            "status": "pending",
+                            "description": "hella good brunch",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c968b87742719f0e4dd4cd"
+                        }
+                    },
+                    6: {
+                        "message": "Created purchase and added it to the account",
+                        "code": 201,
+                        "objectCreated": {
+                            "merchant_id": "56c8f873061b2d440baf43f9",
+                            "medium": "balance",
+                            "purchase_date": "2016-02-20",
+                            "amount": 823.74,
+                            "status": "pending",
+                            "description": "hella good late night snack",
+                            "type": "merchant",
+                            "payer_id": "56c8f105061b2d440baf43ed",
+                            "_id": "56c9694f7742719f0e4dd4ce"
+                        }
                     }
                 });
             }
