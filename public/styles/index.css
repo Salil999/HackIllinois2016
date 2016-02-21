@@ -1,8 +1,3 @@
-#graphs {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 #mainheader {
     color: white;
     background-color: #009900;
@@ -12,66 +7,92 @@
     opacity: 0.75;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
-#savingsjumbo {
-    background-color: white;
-    border-color: #FFD700;
-    border-style: solid;
-    border-width: thin;
-    padding: 0;
-}
-
-#savingsheader {
-    color: #009900;
-    font-family: Rockwell;
-    padding-top: 10px;
-}
-
-#additional-data {
-    padding-top: 30px;
-}
-
-img {
-    border: #00b300;
-    border-style: solid;
-    border-width: thin;
-}
-
-.list-group-item {
-    background-color: #1a85ff;
-    color: white;
-    font-size: 17px;
-    font-family: Rockwell;
-}
-
-.list-group-item:hover {
-    background-color: #0067dd;
-    color: white;
-    font-size: 17px;
-    font-family: Rockwell;
-}
-
 .split-save-desc {
-    font-size: 37px;
+    font-size: 20px;
     font-family: Rockwell;
 }
 
 #logo {
-    width: 107px;
-    height: 70px;
+    width: 250px;
+    height: 150px;
     border: #00b300;
 }
-
-#savings {
-    font-size: 17px;
-    padding: 5px;
+#email {
+    font-family: Rockwell;
 }
 
-#balance {
-    font-size: 17px;
-        padding: 5px;
+#password {
+    font-family: Rockwell;
+}
 
+#loginbutton {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+    color: white;
+    border: #009900;
+    background-color: #009900;
+    opacity: 0.75;
+}
+
+#loginbutton:hover {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+    color: white;
+    border: #008900;
+    background-color: #008900;
+}
+
+#loginfields {
+    padding-top: 95px;
+}
+
+#cont1 {
+    height: 276px;
+}
+
+#emailtext {
+    color: #009900;
+    font-size: 20px;
+}
+
+#pwdtext {
+    color: #009900;
+    font-size: 20px;
+}
+
+#mainheader {
+    background-image: url("http://images.all-free-download.com/images/wallpapers_large/forest_road_wallpaper_landscape_nature_wallpaper_1352.jpg");
+    background-size: 100% auto;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+#register {
+    background-color: white;
+    border: white;
+    border-style: solid;
+}
+
+#registertxt {
+    color: #1ac6ff;
+    font-family: Rockwell;
+    font-size: 15px;
+}
+
+#registertxt:hover {
+    color: #0099cc;
+    font-family: Rockwell;
+    font-size: 15px;
 }

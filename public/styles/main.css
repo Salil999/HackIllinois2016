@@ -1,0 +1,77 @@
+#graphs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#mainheader {
+    color: white;
+    background-color: #009900;
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    opacity: 0.75;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+#savingsjumbo {
+    background-color: white;
+    border-color: #FFD700;
+    border-style: solid;
+    border-width: thin;
+    padding: 0;
+}
+
+#savingsheader {
+    color: #009900;
+    font-family: Rockwell;
+    padding-top: 10px;
+}
+
+#additional-data {
+    padding-top: 30px;
+}
+
+img {
+    border: #00b300;
+    border-style: solid;
+    border-width: thin;
+}
+
+.list-group-item {
+    background-color: #1a85ff;
+    color: white;
+    font-size: 17px;
+    font-family: Rockwell;
+}
+
+.list-group-item:hover {
+    background-color: #0067dd;
+    color: white;
+    font-size: 17px;
+    font-family: Rockwell;
+}
+
+.split-save-desc {
+    font-size: 37px;
+    font-family: Rockwell;
+}
+
+#logo {
+    width: 107px;
+    height: 70px;
+    border: #00b300;
+}
+
+#savings {
+    font-size: 17px;
+    padding: 5px;
+}
+
+#balance {
+    font-size: 17px;
+        padding: 5px;
+
+}

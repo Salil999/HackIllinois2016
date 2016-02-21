@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>SplitSave - Your Account</title>
+	<title>SplitSave - Welcome</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -11,42 +11,34 @@
 </head>
 
 <body>
-	<div class="container">
+	<div id="cont1" class="container">
+
 		<div id="mainheader" class="row">
 			<div class="col-xs-12" align="center">
 				<img id="logo" src="splitsavecapitalstransparent.png" />
 				<br>
 				<br>
 			</div>
-			<p class="split-save-desc" align="center"><span>name</span></p>
+			<p class="split-save-desc" align="center">Keep track of your spending habits and protect your account with constant monitoring.</p>
 		</div>
 		<br>
 		<br>
-
-		<div id="savingsjumbo" class="jumbotron">
-			<div id="savingsheader" class="row">
-				<div class="col-xs-6">
-					<p id="savings" align="left">Current Balance: $<span>0</span></p>
-				</div>
-				<div class="col-xs-6">
-					<p id="balance" align="right">Week's Savings: $<span>0</span></p>
-				</div>
-			</div>
-		</div>
-		<!--Graphs go here-->
-		<div id="graphs" class="row">
-			<img class="col-xs-12" align="center" src="https://d13yacurqjgara.cloudfront.net/users/91696/screenshots/1124170/line_graph.jpg" width="600" height="500" />
-		</div>
-		<!--Additional Data-->
-		<div class="col-xs-12" id="additional-data">
-			<div align="center" class="list-group">
-				<li class="list-group-item">This Week Spending: $<span>0</span></li>
-				<br>
-				<li class="list-group-item">Last Week Spending: $<span>0</span></li>
-			</div>
-		</div>
 	</div>
-
+	
+    <div id="loginfields" class="col-xs-12" align="center">
+    <form role="form">
+  <div class="form-group">
+    <label id="email" for="email"><p id="emailtext">Email address:</p></label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+      <label id="password" for="pwd"><p id="pwdtext">Password:</p></label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <button id="loginbutton">Login</button><br><br>
+  <button id="register"><p id="registertxt">Sign Up</p></button>
+</form>
+    </div>
+    </div>
+    
 </body>
-
-</html>
