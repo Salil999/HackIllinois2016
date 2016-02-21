@@ -1,6 +1,7 @@
 //jshint esversion: 6
 var express = require('express');
 var path = require('path');
+var jade = require('jade');
 var Firebase = require('firebase');
 var Client = require('node-rest-client').Client;
 const ref = new Firebase('https://splitsave.firebaseio.com');
@@ -13,6 +14,32 @@ const acc_ID = '56c8f105061b2d440baf43ed';
 
 var app = express();
 
+app.get('/', function(req, res) {
+    app.use(express.static(path.join(__dirname, 'public')));
+    res.sendFile(path.join(__dirname, 'public/login.html'));
+});
+
+app.post('/', function(req, res) {
+    ref.authWithPassword({
+        email: req.body.email,
+        password: req.body.password
+    }, function(err, account) {
+        if (err) {
+            console.log(err);
+            res.send(500, 'badLogin');
+            return;
+        } else {
+            var usersRef = ref.child('users').child(account.uid).child.child('account');
+            usersRef.on('value', function(snapshot) {
+                data = snapshot.val();
+                console.log(data);
+            });
+        }
+    });
+
+});
+
+/*
 app.get('/', function(req, res) {
     var client = new Client();
 
@@ -156,34 +183,29 @@ app.get('/', function(req, res) {
         });
     });
 
-    uri = baseURL + 'customers/' + cust_ID + '/accounts' + '?key=' + API_KEY;
-    client.get(uri, function(data, res) {
-        //console.log(data);
-        ref.authWithPassword({
-            email: user,
-            password: pass
-        }, function(err, account) {
-            if (err) {
-                console.log(err);
-                return;
-            } else {
-                var usersRef = ref.child('users').child(account.uid).child('account');
-                usersRef.update({
-                    money: {
-                        /*balance: data[0].balance,*/
-                        balance: 10000,
-                        accNo: data[0].account_number,
-                        type: data[0].type
-                    }
-                });
-            }
-        });
+uri = baseURL + 'customers/' + cust_ID + '/accounts' + '?key=' + API_KEY;
+client.get(uri, function(data, res) {
+    //console.log(data);
+    ref.authWithPassword({
+        email: user,
+        password: pass
+    }, function(err, account) {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            var usersRef = ref.child('users').child(account.uid).child('account');
+            usersRef.update({
+                money: {
+                    balance: 10000,
+                    accNo: data[0].account_number,
+                    type: data[0].type
+                }
+            });
+        }
     });
-
-
-
-    res.redirect('/home');
 });
+*/
 
 app.get('/home', function(req, res) {
     app.use(express.static(path.join(__dirname, 'public')));

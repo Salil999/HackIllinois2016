@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.13.4",
     "firebase": "^2.4.1",
+    "jade": "^1.11.0",
     "node-rest-client": "^1.8.0"
   }
 }

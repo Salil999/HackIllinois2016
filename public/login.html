@@ -9,33 +9,41 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="styles/login.css">
 </head>
-    
-<body>
-    <div id="cont1" class="container">
 
-    <div id="mainheader" class="row">
-        <div class="col-xs-12" align="center">
-            <img id="logo" src="splitsavecapitalstransparent.png"/><br><br>
-        </div>
-                <p class="split-save-desc" align="center">Keep track of your spending habits and protect your account with constant monitoring.</p>
-        </div><br><br>
-    </div> 
-    <div id="cont2" class="container">
-    <div id="loginfields" class="col-xs-12" align="center">
-    <form role="form">
-  <div class="form-group">
-    <label id="email" for="email"><p id="emailtext">Email address:</p></label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-      <label id="password" for="pwd"><p id="pwdtext">Password:</p></label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <button id="loginbutton">Login</button>
-</form>
-    </div>
-        </div>
-    </div>
-    
-    
+<body>
+	<div id="cont1" class="container">
+
+		<div id="mainheader" class="row">
+			<div class="col-xs-12" align="center">
+				<img id="logo" src="splitsavecapitalstransparent.png" />
+				<br>
+				<br>
+			</div>
+			<p class="split-save-desc" align="center">Keep track of your spending habits and protect your account with constant monitoring.</p>
+		</div>
+		<br>
+		<br>
+	</div>
+	<div id="cont2" class="container">
+		<div id="loginfields" class="col-xs-12" align="center">
+			<form role="form" method="/">
+				<div class="form-group">
+					<label id="email" for="email">
+						<p id="emailtext">Email address:</p>
+					</label>
+					<input type="email" class="form-control" id="email" name="email">
+				</div>
+				<div class="form-group">
+					<label id="password" for="pwd">
+						<p id="pwdtext">Password:</p>
+					</label>
+					<input type="password" class="form-control" id="pwd" name="password">
+				</div>
+				<button id="loginbutton">Login</button>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
 </body>

@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title SplitSave - Your Account
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    link(rel='stylesheet', href='styles/index.css')
+  body
+    .container
+      #mainheader.row
+        .col-xs-12(align='center')
+          img#logo(src='splitsavecapitalstransparent.png')
+          br
+          br
+        p.split-save-desc(align='center')
+          span name
+      br
+      br
+      #savingsjumbo.jumbotron
+        #savingsheader.row
+          .col-xs-6
+            p#savings(align='left')
+              | Current Balance: $
+              span 0
+          .col-xs-6
+            p#balance(align='right')
+              | Week's Savings: $
+              span 0
+      // Graphs go here
+      #graphs.row
+        img.col-xs-12(align='center', src='https://d13yacurqjgara.cloudfront.net/users/91696/screenshots/1124170/line_graph.jpg', width='600', height='500')
+      // Additional Data
+      #additional-data.col-xs-12
+        .list-group(align='center')
+          li.list-group-item
+            | This Week Spending: $
+            span 0
+          br
+          li.list-group-item
+            | Last Week Spending: $
+            span 0
