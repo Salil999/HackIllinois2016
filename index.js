@@ -34,9 +34,9 @@ app.post('/', function(req, res) {
                 data = snapshot.val();
                 console.log(data);
             });
+            res.redirect('/login');
         }
     });
-
 });
 
 /*
@@ -210,10 +210,6 @@ client.get(uri, function(data, res) {
 app.get('/home', function(req, res) {
     app.use(express.static(path.join(__dirname, 'public')));
     res.sendFile(__dirname + '/public/index.html');
-});
-
-app.get('/login', function(req, res) {
-    res.send('hello world');
 });
 
 app.listen(5000);
