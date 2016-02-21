@@ -38,7 +38,8 @@
     font-size: 20px;
     color: white;
     border: #009900;
-    background-color: #009900;   
+    background-color: #009900;
+    opacity: 0.75;
 }
 
 #loginbutton:hover {
@@ -50,7 +51,7 @@
     font-size: 20px;
     color: white;
     border: #008900;
-    background-color: #008900;   
+    background-color: #008900;
 }
 
 #loginfields {
@@ -76,4 +77,22 @@
     background-size: 100% auto;
     padding-bottom: 70px;
     padding-top: 10px;
+}
+
+#register {
+    background-color: white;
+    border: white;
+    border-style: solid;
+}
+
+#registertxt {
+    color: #1ac6ff;
+    font-family: Rockwell;
+    font-size: 15px;
+}
+
+#registertxt:hover {
+    color: #0099cc;
+    font-family: Rockwell;
+    font-size: 15px;
 }
