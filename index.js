@@ -118,14 +118,15 @@ app.post('/login', function(req, res) {
                 };
                 var graphOptions = { layout: layout, filename: "date-axes", fileopt: "overwrite" };
                 plotly.plot(plotting, graphOptions, function(err, msg) {
-                    console.log(msg);
+                    //console.log(msg);
                     res.render(path.join(__dirname, 'public/main.jade'), {
                         name: fullName,
                         currBalance: parseFloat(currBalance).toFixed(2),
                         savings: parseFloat(avgDifference).toFixed(2),
                         spentThisWeek: parseFloat(totalSpentThisWeek).toFixed(2),
                         spentLastWeek: parseFloat(totalSpentLastWeek).toFixed(2),
-                        imgURL: msg.url + '.png'
+                        /*imgURL: msg.url + '.jpeg'*/
+                        imgURL: 'https://plot.ly/~Salil999/6.png'
                     });
                 });
                 // PLOTLY
