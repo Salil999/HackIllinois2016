@@ -3,21 +3,27 @@ var express = require('express');
 var path = require('path');
 var Firebase = require('firebase');
 var Client = require('node-rest-client').Client;
+const ref = new Firebase('https://splitsave.firebaseio.com');
 
+const API_KEY = '65be1ee16b2fbd6faade515551491370';
+const baseURL = 'http://api.reimaginebanking.com/';
+const ID = '56c8ea7f061b2d440baf43dd';
 // Shashank's _id: 56c8ea7f061b2d440baf43dd
-
-function getInfo(url) {
-    var client = new Client();
-    client.get(url, function(data, res) {
-        console.log(data);
-        return data;
-    });
-}
+var endpoint;
 
 var app = express();
 
 app.get('/', function(req, res) {
-	console.log(getInfo('http://api.reimaginebanking.com/customers/56c8ea7f061b2d440baf43dd?key=65be1ee16b2fbd6faade515551491370'));
+	var client = new Client();
+	var uri = baseURL + 'customers/' + ID + '?key=' + API_KEY;
+	client.get(uri, function(data, res) {
+		console.log(data);
+	});
+	var url = baseURL + 'customers/' + ID + '/accounts' + '?key=' + API_KEY
+	client.get(url, function(data, res) {
+		//console.log(url);
+		console.log(data);
+	});
 	res.redirect('/home');
 });
 
