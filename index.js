@@ -1,4 +1,5 @@
 //jshint esversion: 6
+const PORT = process.env.PORT || 5000;
 var express = require('express');
 var path = require('path');
 var plotly = require('plotly')('Salil999', 'kxd6nm4m81');
@@ -357,4 +358,4 @@ app.get('/setData', function(req, res) {
 });
 */
 
-app.listen(5000);
+app.listen(PORT);
