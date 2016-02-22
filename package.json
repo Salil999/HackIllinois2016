@@ -4,6 +4,7 @@
   "description": "Bank app",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/Salil999/HackIllinois2016#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "firebase": "^2.4.1",
     "jade": "^1.11.0",
-    "node-rest-client": "^1.8.0"
+    "node-rest-client": "^1.8.0",
+    "plotly": "^1.0.6"
   }
 }
