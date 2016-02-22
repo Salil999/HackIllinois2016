@@ -1,0 +1,71 @@
+#signupbutton {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+    color: white;
+    border: #009900;
+    background-color: #009900;
+    opacity: 0.75;
+}
+
+#signupbutton:hover {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+    color: white;
+    border: #008900;
+    background-color: #008900;
+}
+
+#mainheader {
+    background-image: url("http://media.cleveland.com/business_impact/photo/federal-reservejpg-be97f553d2a653cd.jpg");
+    background-size:117% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+#cont1 {
+    height: 276px;
+}
+
+#emailtext {
+    color: #009900;
+    font-size: 20px;
+}
+
+#pwdtext {
+    color: #009900;
+    font-size: 20px;
+}
+
+.split-save-desc {
+    font-size: 25px;
+    font-family: Rockwell;
+    color: white;
+    text-shadow: -0.03px 0 black, 0 0.03px black, 0.03px 0 black, 0 -0.03px black;
+}
+
+#logo {
+    width: 250px;
+    height: 150px;
+    border: #00b300;
+}
+#email {
+    font-family: Rockwell;
+}
+
+#password {
+    font-family: Rockwell;
+}
+
+#loginfields {
+    padding-top: 90px;
+}
